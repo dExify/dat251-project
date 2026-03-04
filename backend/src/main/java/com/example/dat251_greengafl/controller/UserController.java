@@ -1,5 +1,6 @@
 package com.example.dat251_greengafl.controller;
 
+import com.example.dat251_greengafl.entities.UserEntity;
 import com.example.dat251_greengafl.model.User;
 import com.example.dat251_greengafl.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,8 +30,12 @@ public class UserController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
-    private User create(@RequestBody User user){
-        return userService.register(user);
+    private User create(@RequestBody UserEntity user){
+        User u = new User();
+        u.setUsername(user.username());
+        u.setEmail(user.email());
+        u.setPassword(user.password());
+        return userService.register(u);
     }
 
     @PutMapping

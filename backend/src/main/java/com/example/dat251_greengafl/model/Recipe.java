@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 
 import java.util.UUID;
 
+/**
+ * Dummy recipe entity.
+ * Features like steps and duration not implemented
+ */
 @Entity
 public class Recipe {
     @Id

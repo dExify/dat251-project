@@ -1,5 +1,6 @@
 package com.example.dat251_greengafl.controller;
 
+import com.example.dat251_greengafl.entities.RecipeEntity;
 import com.example.dat251_greengafl.model.Recipe;
 import com.example.dat251_greengafl.service.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,8 +30,12 @@ public class RecipeController {
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
-    private Recipe create(@RequestBody Recipe recipe){
-        return recipeService.register(recipe);
+    private Recipe create(@RequestBody RecipeEntity recipe){
+        Recipe r = new Recipe();
+        r.setTitle(recipe.title());
+        r.setDescription(recipe.description());
+        r.setInstructions(recipe.instructions());
+        return recipeService.register(r);
     }
 
     @PutMapping
