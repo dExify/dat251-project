@@ -1,4 +1,6 @@
 package com.example.dat251_greengafl.entities;
 
-public record RecipeEntity(String title, String description, String instructions) {
+import com.example.dat251_greengafl.model.Difficulty;
+
+public record RecipeEntity(String name, String instructions, Integer cookingTime, Difficulty difficulty) {
 }

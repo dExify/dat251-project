@@ -22,8 +22,8 @@ public class RecipeService {
         return recipeRepo.findById(id);
     }
 
-    public Optional<Recipe> findByTitle(String title){
-        return recipeRepo.findByTitle(title);
+    public Optional<Recipe> findByName(String name){
+        return recipeRepo.findByName(name);
     }
 
     public Recipe register(Recipe recipe){

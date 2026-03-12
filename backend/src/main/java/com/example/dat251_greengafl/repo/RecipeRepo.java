@@ -7,5 +7,5 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface RecipeRepo extends JpaRepository<Recipe, UUID> {
-    Optional<Recipe> findByTitle(String title);
+    Optional<Recipe> findByName(String name);
 }

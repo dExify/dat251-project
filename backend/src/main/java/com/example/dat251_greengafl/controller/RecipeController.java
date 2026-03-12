@@ -32,9 +32,10 @@ public class RecipeController {
     @PostMapping
     private Recipe create(@RequestBody RecipeEntity recipe){
         Recipe r = new Recipe();
-        r.setTitle(recipe.title());
-        r.setDescription(recipe.description());
+        r.setName(recipe.name());
         r.setInstructions(recipe.instructions());
+        r.setCookingTime(recipe.cookingTime());
+        r.setDifficulty(recipe.difficulty());
         return recipeService.register(r);
     }
 
