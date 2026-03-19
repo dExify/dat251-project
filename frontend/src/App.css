@@ -216,6 +216,13 @@
   background: #f2e9d6;
 }
 
+.preview-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 120px;
+}
+
 .visual-label {
   font-size: 0.8rem;
   text-transform: uppercase;

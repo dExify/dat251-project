@@ -27,7 +27,7 @@ function App() {
       <header className="topbar">
         <div className="brand-block">
           <p className="brand-mark">Greengafl</p>
-          <p className="brand-subtitle">Easy dinner suggestions with room to personalize.</p>
+          <p className="brand-subtitle">Easy dinner suggestions personalized for your needs.</p>
         </div>
 
         <nav className="auth-actions" aria-label="Authentication">
@@ -42,7 +42,6 @@ function App() {
 
       <main className="hero-layout">
         <section className="hero-copy">
-          <p className="eyebrow">Dinner inspiration, made practical</p>
           <h1>Dinner ideas that fit your evening.</h1>
           <p className="hero-text">
             Greengafl helps users discover meal ideas based on dietary preferences,
@@ -59,22 +58,22 @@ function App() {
 
         <section className="visual-panel" aria-label="App preview">
           <div className="visual-card visual-card-main">
-            <p className="visual-label">Coming next</p>
-            <h2>App preview space</h2>
+            <p className="visual-label">Featured recipe preview</p>
+            <h2>Creamy tomato rigatoni</h2>
             <p>
-              This area can later hold food photography, featured dishes, or a collage that
-              gives the front page more appetite and personality.
+              A quick example of how Greengafl can present an appealing dinner option before
+              users explore more suggestions inside the app.
             </p>
           </div>
 
-          <div className="visual-card visual-card-accent">
-            <span>Fast filters</span>
-            <strong>Diet, time, difficulty</strong>
+          <div className="visual-card visual-card-accent preview-detail">
+            <span>Time</span>
+            <strong>25 minutes</strong>
           </div>
 
-          <div className="visual-card visual-card-accent soft">
-            <span>Future flow</span>
-            <strong>Sign in, personalize, discover dinner</strong>
+          <div className="visual-card visual-card-accent soft preview-detail">
+            <span>Good for</span>
+            <strong>Busy evenings and cozy dinners</strong>
           </div>
         </section>
       </main>
